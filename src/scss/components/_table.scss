@@ -1,0 +1,30 @@
+.table {
+  width: 100%;
+  font-size: 1.6em;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+  td, th {
+  }
+  thead {
+    background: #f4f4f4;
+  }
+  tbody {
+    tr:nth-child(even) {
+      background: #f4f4f4;
+    }
+  }
+  th {
+    font-weight: normal;
+    .theme--blue & {
+      color: $blue;
+    }
+  }
+  th, td {
+    padding: 13px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 0 0 1px #fff inset;
+  }
+  &--center {
+    text-align: center;
+  }
+}

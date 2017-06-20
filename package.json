@@ -1,0 +1,17 @@
+{
+  "name": "gulp-workflow",
+  "version": "1.0.0",
+  "description": "html website gulp workflow",
+  "main": "index.js",
+  "scripts": {
+    "build": "blendid build",
+    "serve": "blendid"
+  },
+  "repository": "git@github.com:AhmedFat7y/gulp-blendid-workflow.git",
+  "author": "Ahmed Abdelwahab",
+  "license": "MIT",
+  "dependencies": {
+    "blendid": "^4.1.1",
+    "gulp-pug": "^3.3.0"
+  }
+}

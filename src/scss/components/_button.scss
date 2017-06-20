@@ -1,0 +1,140 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.button {
+  border: 1px solid;
+  height: 58px;
+  color: #fff;
+  padding: 0 50px;
+  position: relative;
+  min-width: 200px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 58px;
+  font-size: 1.8em;
+  text-align: center;
+  &::after, &::before {
+    content: '';
+    width: 20px;
+    color: #fff;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    //to vertical align relative to button
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &::after {
+    right: 0;
+  }
+  &::before {
+    left: 0;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+  .theme--blue &, &.button--blue.button--blue {
+    background-color: $blue;
+    border-color: $blue;
+    &:hover {
+      color: $blue;
+      background-color: transparent;
+      &:after, &:before {
+        background-color: $blue;
+      }
+    }
+  }
+  .theme--green &, &.button--green.button--green {
+    background-color: $green;
+    border-color: $green;
+    &:hover {
+      color: $green;
+      background-color: transparent;
+      &:after, &:before {
+        background-color: $green;
+      }
+    }
+  }
+  .theme--purple &, &.button--purple.button--purple {
+    background-color: $purple;
+    border-color: $purple;
+    &:hover {
+      color: $purple;
+      background-color: transparent;
+      &:after, &:before {
+        background-color: $purple;
+      }
+    }
+  }
+  &.button--transparent {
+    background-color: transparent;
+    border-color: #fff;
+    &:hover {
+      border-color: $green;
+      color: $green;
+    }
+    &:after, &:before {
+      background-color: transparent;
+    }
+  }
+}
+
+.circular-button {
+  width: 200px;
+  height: 200px;
+  background-color: $purple;
+  color: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  &:after {
+    content: '';
+    background:  url('../images/circular-button.jpg');
+    opacity: 0.125;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  &:hover {
+    background-color: #fff;
+    color: $purple;
+    border: 1px solid $purple;
+    svg {
+      fill: $purple;
+    }
+  }
+  svg {
+    height: 52px;
+    width: 42px;
+    fill: #fff;
+    margin-top: 50px;
+    vertical-align: top;
+  }
+  span {
+    margin-top: 15px;
+    width: 100%;
+    display: inline-block;
+    font-size: 1.8em;
+  }
+}
+.more-articles-link {
+  font-size: 1.8em;
+  .theme--blue & {
+    color: $blue;
+  }
+  .theme--purple & {
+    color: $purple;
+  }
+  .theme--green & {
+    color: $green;
+  }
+}

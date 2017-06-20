@@ -1,0 +1,135 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.main-header .container {
+  text-align: center;
+}
+.main-header-wrapper.fixed {
+  position: fixed;
+  top: 0;
+  
+}
+.main-header-wrapper {
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.15);
+  height: 60px;
+  line-height: 60px;
+  background: #fff;
+  font-size: 0;
+  width: 100%;
+  z-index: 100;
+  
+}
+
+.main-header{
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  position: relative;
+  .search-form-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 50;
+    width: 100%;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.15);
+    button {
+      svg {
+        vertical-align: middle;
+      }
+    }
+    &.show {
+      display: inline-block;
+    }
+  }
+  .logo {
+    margin:2px 0 0;
+    line-height: 0.5;
+    max-width: pxtopercentage(145, $screen-size);
+    img {
+      vertical-align: top;
+      width: 100%;
+    }
+  }
+  svg {
+    vertical-align: middle;
+  }
+  a {
+    display: inline-block;
+    &:hover, &focus {
+      box-shadow: none;
+      border-color: $purple;
+      svg {
+        fill: $purple;
+      }
+    }
+  }
+  .logo, .menu-search, .menu-tools, .nav-container, .menu-videos  {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 0.5;
+  }
+  .header-actions {
+    width: pxtopercentage(80, 335);
+    &.pull-left {
+      text-align: left;
+    }
+    &.pull-right {
+      text-align: right;
+    }
+  }
+  .menu-videos {
+    max-width: pxtopercentage(30, 75);
+    margin-left: pxtopercentage(10, 75);
+  }
+  .menu-header-tools {
+    max-width: pxtopercentage(30, 75);
+    display: inline-block;
+  }
+}
+.nav-container {
+  margin-left: pxtopercentage(10, 75);
+}
+
+
+.burger-menu {
+  svg {
+    width: 30px;
+    height: 17px;
+    fill: rgb(105, 105, 105);
+  }
+}
+.menu-search {
+  max-width: pxtopercentage(30, 75);
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: rgb(105, 105, 105);
+  }
+  .active {
+    svg {
+      fill: $purple;
+    }
+  }
+}
+.tool-icons {
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: rgb(105, 105, 105);
+  }
+}
+.videos-icon {
+  max-width: 100%;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid rgb(105, 105, 105);
+  text-align: center;
+  line-height: 25px;
+  svg {
+    width: 9px;
+    height: 11px;
+    fill: rgb(105, 105, 105);
+  }
+}

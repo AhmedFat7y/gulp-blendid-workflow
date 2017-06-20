@@ -1,0 +1,94 @@
+@charset 'UTF-8';
+
+// 0. Bower scss components
+// bower:scss
+// endbower
+// 1. Configuration and helpers
+@import
+  'utils/variables',
+  'utils/functions',
+  'utils/mixins';
+
+// 2. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 3. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';
+
+// 4. Components
+@import
+  'components/button',
+  'components/table',
+  'components/datepicker';
+
+// 5. Page-specific styles
+// @import
+//   'pages/home',
+//   'pages/tool-recipe-finder',
+//   'pages/tool-child-stage',
+//   'pages/profile-author',
+//   'pages/ask-supermama',
+//   'pages/recipe',
+//   'pages/category-pregnancy',
+//   'pages/category-recipes',
+//   'pages/article-text',
+//   'pages/_tool-child-when',
+//   'pages/tool-baby-name-profile',
+//   'pages/tool-baby-name',
+//   'pages/article-video',
+//   'pages/pregnancy-calculator',
+//   'pages/tool-guide-2',
+//   'pages/tool-guide-profile',
+//   'pages/about-us';
+
+// 6. Themes
+// @import
+//   'themes/default',
+//   'themes/cards';
+
+// 7. Templates
+// @import
+//   'templates/card',
+//   'templates/about-author',
+//   'templates/super-mama-actions',
+//   'templates/share-social-icons',
+//   'templates/banner-slider',
+//   'templates/article-tags',
+//   'templates/go-to-lists',
+//   'templates/article-header',
+//   'templates/quiz-result',
+//   'templates/horizontal-list',
+//   'templates/search-form',
+//   'templates/download-list',
+//   'templates/select-filter',
+//   'templates/ask-supermama-form',
+//   'templates/question-thread',
+//   'templates/ads',
+//   'templates/user-bio',
+//   'templates/scrollable-tabs',
+//   'templates/tabs',
+//   'templates/quiz',
+//   'templates/main-menu',
+//   'templates/tools-list',
+//   'templates/accordion',
+//   'templates/ratings',
+//   'templates/guide-grid',
+//   'templates/quiz-0',
+//   'templates/child-stages-tabs',
+//   'templates/trending-names',
+//   'templates/name-info',
+//   'templates/forms',
+//   'templates/name-results',
+//   'templates/find-by-name-form',
+//   'templates/guide-result-list',
+//   'templates/form-secondary',
+//   'templates/gallery-slider',
+//   'templates/go-to-category',
+//   'templates/source',
+//   'templates/go-to-author';
